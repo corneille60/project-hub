@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Account Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="registerForm">
+                <h2>Register</h2>
+                <label for="regNumber">Registration Number:</label>
+                <input type="text" id="regNumber" name="regNumber" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+
+            <form id="loginForm">
+                <h2>Login</h2>
+                <label for="loginRegNumber">Registration Number:</label>
+                <input type="text" id="loginRegNumber" name="loginRegNumber" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add registration logic here
+            alert('Registered successfully!');
+        });
+    
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add login logic here
+            alert('Logged in successfully!');
+        });
+    </script>
+    
+</body>
+</html>
